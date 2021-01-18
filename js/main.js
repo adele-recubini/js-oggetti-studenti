@@ -43,6 +43,7 @@ console.log(studente);
 
 // devo ciclare su tutti gli studenti per saperne le proprietà cioe    nome -- valore
 // cognome --valore
+// io con un ciclo for percorro l array studenti e dopo per prendere solo alcuni valori faccio un ciclo for in con l indice dell array e il valore . in questo caso scrivere studenti senza la i sarebbe stato un errore per uno è un array l altro è un oggetto
 for (var i = 0; i < studenti.length; i++) {
 
    for (var key in studenti ) {
