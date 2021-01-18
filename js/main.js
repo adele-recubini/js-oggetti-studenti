@@ -43,13 +43,14 @@ console.log(studente);
 
 // devo ciclare su tutti gli studenti per saperne le proprietà cioe    nome -- valore
 // cognome --valore
- for (var i = 0; i < studenti.length; i++) {
-   for (var key in studenti ) {
-     console.log(studenti['nome']);
-     console.log(studenti['cognome']);
-   }
+for (var i = 0; i < studenti.length; i++) {
 
+   for (var key in studenti ) {
+     console.log(studenti[i]['nome']);
+     console.log(studenti[i]['cognome']);
+   }
 }
+
 
 
 
