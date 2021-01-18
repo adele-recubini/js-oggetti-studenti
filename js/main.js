@@ -24,23 +24,33 @@ console.log(studente);
     {
       'nome': 'adele',
       'cognome':'recubini',
+      'eta': 25,
    },
 
 
     {
     'nome': 'paolo',
     'cognome':'rossi',
+     'eta': 36,
   },
 ];
-console.log(studenti);
+// devo ciclare sugli stuenti e fare console log solo di nome e cognome
+// for (var key in studenti ) {
+//   console.log(studenti[nome]);
+//   console.log(studenti[cognome]);
+// }
+
 
 // devo ciclare su tutti gli studenti per saperne le proprietà cioe    nome -- valore
 // cognome --valore
-// for (var i = 0; i < studenti.length; i++) {}
+ for (var i = 0; i < studenti.length; i++) {
+   for (var key in studenti ) {
+     console.log(studenti['nome']);
+     console.log(studenti['cognome']);
+   }
 
-  for (var key in studenti) {
-    console.log(studenti[key]);
-  }
+}
+
 
 
 // ora il mio array studenti voglio popolarlo con un altro oggetto studente dandogli delle PROPRIETà che pero mi dira l utente
