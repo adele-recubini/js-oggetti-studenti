@@ -20,8 +20,6 @@ console.log(studente);
 
 // un array puo contenere oggetti e si scrive cosi
 
-
-
  var studenti = [
     {
       'nome': 'adele',
@@ -36,13 +34,15 @@ console.log(studente);
 ];
 console.log(studenti);
 
-// devo ciclare su tutti gli studenti per saperne le proprietà cioe nome -- valore cognome --valore
-for (var i = 0; i < studenti.length; i++) {
+// devo ciclare su tutti gli studenti per saperne le proprietà cioe    nome -- valore
+// cognome --valore
+// for (var i = 0; i < studenti.length; i++) {}
 
   for (var key in studenti) {
     console.log(studenti[key]);
   }
-}
+
+
 // ora il mio array studenti voglio popolarlo con un altro oggetto studente dandogli delle PROPRIETà che pero mi dira l utente
  //  i miei prompt sono le chiavi infatti metto.chive(nome , cognome eta ecc ) le risposte i valori
  // creo l oggetto vuoto che si andra a popolare
@@ -54,3 +54,7 @@ for (var i = 0; i < studenti.length; i++) {
   altroStudente.eta = prompt('la tua eta ?')
 
   studenti.push(altroStudente);
+
+  for (var key in studenti) {
+    console.log(studenti[key]);
+  }
