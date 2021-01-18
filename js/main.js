@@ -17,3 +17,26 @@ for (var key in studente) {
 console.log(studente);
 
 // 2 ESERCIZIO
+
+// un array puo contenere oggetti e si scrive cosi
+ var studenti = [
+    {
+      'nome': 'adele',
+      'cognome':'recubini',
+   },
+
+    {
+    'nome': 'paolo',
+    'cognome':'rossi',
+  },
+];
+console.log(studenti);
+
+// devo ciclare su tutti gli studenti per saperne le proprietà cioe nome -- valore cognome --valore
+for (var i = 0; i < studenti.length; i++) {
+
+  for (var key in studenti) {
+    console.log(studenti[key]);
+  }
+}
+// ora il mio array studenti voglio popolarlo con un altro oggetto studente dandogli delle PROPRIETà
